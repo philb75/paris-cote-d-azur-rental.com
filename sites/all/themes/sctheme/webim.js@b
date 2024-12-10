@@ -1,0 +1,44 @@
+
+$(document).ready(function(){
+$(".flip").click(function(){
+    $("#webform-client-form-64").slideToggle(1);
+    $("div.flip").css("top","-300px");
+    $("div.flip2").css("top","-310px");
+
+     $('.flip2').show();
+     $('.flip1').hide();
+
+  if ($('div.flip2').css("visibility") == "visible")
+  {
+  $("div.flip").css("visibility","hidden");
+  } else{
+  $("div.flip").css("visibility","visible");
+
+  }
+
+	});
+
+$(".flip2").click(function(){
+          $("div.flip").css("top","1px");
+       $("#webform-client-form-64").slideToggle(1);
+          $('.flip').show();
+          $('.flip2').hide();
+
+  if ($('div.flip').css("visibility") == "visible")
+  {
+   $("div.flip2").css("visibility","hidden");
+  } else{
+  $("div.flip").css("visibility","visible");
+
+  }
+
+	});
+
+  });
+
+  $(document).ready(function(){
+   $('#block-nice_menus-5 ').prepend("<div><h3>Core Solutions</h3></div>")
+
+
+});
+
