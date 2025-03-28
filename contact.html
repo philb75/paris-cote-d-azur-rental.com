@@ -173,42 +173,52 @@ jQuery.extend(Drupal.settings, { "basePath": "/", "googleanalytics": { "trackOut
 <p class="contactsmallcaps"></p>
 <p class="contactsmallcaps"></p>
 <p class="contactsmallcaps"></p>
-</div><form action="http://paris-cote-d-azur-rental.com/contact-us"  accept-charset="UTF-8" method="post" id="webform-client-form-35" class="webform-client-form" enctype="multipart/form-data">
-<div><div class="webform-component webform-component-textfield" id="webform-component-name-contact"><div class="form-item" id="edit-submitted-name-contact-wrapper">
- <label for="edit-submitted-name-contact">Your Name: <span class="form-required" title="This field is required.">*</span></label>
- <input type="text" maxlength="128" name="submitted[name_contact]" id="edit-submitted-name-contact" size="60" value="" class="form-text required" />
+</div><form action="https://formspree.io/f/mdkelkyd" method="POST" id="contact-form" class="webform-client-form">
+<div>
+    <div class="webform-component webform-component-textfield" id="webform-component-name-contact">
+        <div class="form-item" id="edit-submitted-name-contact-wrapper">
+            <label for="edit-submitted-name-contact">Your Name: <span class="form-required" title="This field is required." style="color:red">*</span></label>
+            <input type="text" name="name" id="edit-submitted-name-contact" size="60" class="form-text required" required>
+        </div>
+    </div>
+    <div class="webform-component webform-component-email" id="webform-component-email-contact">
+        <div class="form-item" id="edit-submitted-email-contact-wrapper">
+            <label for="edit-submitted-email-contact" style="color: white;">Email Address: <span class="form-required" title="This field is required." style="color:red">*</span></label>
+            <input class="form-text form-email required email" type="email" id="edit-submitted-email-contact" name="email" size="60" required>
+        </div>
+    </div>
+    <div class="webform-component webform-component-textfield" id="webform-component-phone-contact">
+        <div class="form-item" id="edit-submitted-phone-contact-wrapper">
+            <label for="edit-submitted-phone-contact" style="color: white;">Phone Number: </label>
+            <input type="text" name="phone" id="edit-submitted-phone-contact" size="60" class="form-text">
+        </div>
+    </div>
+    <div class="webform-component webform-component-select" id="webform-component-property">
+        <div class="form-item" id="edit-submitted-property-wrapper">
+            <label for="edit-submitted-property" style="color: white;">Property: <span class="form-required" title="This field is required." style="color:red">*</span></label>
+            <select name="property" class="form-select required" id="edit-submitted-property" required>
+                <option value="" disabled selected>Choice of residence</option>
+                <option value="Paris_Jardin_du_Luxembourg">Paris Jardin du Luxembourg</option>
+                <option value="Paris_Le_Marais">Paris Le Marais</option>
+                <option value="French_Riviera">French Riviera</option>
+            </select>
+        </div>
+    </div>
+    <div class="webform-component webform-component-textarea" id="webform-component-inquiry">
+        <div class="form-item" id="edit-submitted-inquiry-wrapper">
+            <label for="edit-submitted-inquiry" style="color: white;">Your Message: </label>
+            <textarea cols="60" rows="3" name="message" id="edit-submitted-inquiry" class="form-textarea"></textarea>
+        </div>
+    </div>
+    <div id="edit-actions" class="form-actions form-wrapper">
+        <span class="art-button-wrapper">
+            <span class="l"></span>
+            <span class="r"></span>
+            <button type="submit" class="form-submit art-button">Submit</button>
+        </span>
+    </div>
 </div>
-</div><div class="webform-component webform-component-email" id="webform-component-email-contact"><div class="form-item" id="edit-submitted-email-contact-wrapper">
- <label for="edit-submitted-email-contact">Email Address: <span class="form-required" title="This field is required.">*</span></label>
- <input class="form-text form-email required email" type="email" id="edit-submitted-email-contact" name="submitted[email_contact]" size="60" />
-</div>
-</div><div class="webform-component webform-component-textfield" id="webform-component-phone-contact"><div class="form-item" id="edit-submitted-phone-contact-wrapper">
- <label for="edit-submitted-phone-contact">Phone Number: </label>
- <input type="text" maxlength="128" name="submitted[phone_contact]" id="edit-submitted-phone-contact" size="60" value="" class="form-text" />
-</div>
-</div><div class="webform-component webform-component-select" id="webform-component-property"><div class="form-item" id="edit-submitted-property-wrapper">
- <label for="edit-submitted-property">Property: <span class="form-required" title="This field is required.">*</span></label>
- <select name="submitted[property]" class="form-select required" id="edit-submitted-property" ><option value="Choice_of_residence">Choice of residence</option><option value="Paris_Jardin_du_Luxembourg">Paris Jardin du Luxembourg</option><option value="Paris_Le_Marais">Paris Le Marais</option><option value="French_Riviera">French Riviera</option></select>
-</div>
-</div><div class="webform-component webform-component-textarea" id="webform-component-inquiry"><div class="form-item" id="edit-submitted-inquiry-wrapper">
- <label for="edit-submitted-inquiry">Your Message: </label>
- <textarea cols="60" rows="3" name="submitted[inquiry]" id="edit-submitted-inquiry"  class="form-textarea"></textarea>
-</div>
-</div><input type="hidden" name="details[sid]" id="edit-details-sid" value=""  />
-<input type="hidden" name="details[page_num]" id="edit-details-page-num" value="1"  />
-<input type="hidden" name="details[page_count]" id="edit-details-page-count" value="1"  />
-<input type="hidden" name="details[finished]" id="edit-details-finished" value="0"  />
-<input type="hidden" name="form_build_id" id="form-b346c8bf95e92a46a0834110b20b793e" value="form-b346c8bf95e92a46a0834110b20b793e"  />
-<input type="hidden" name="form_id" id="edit-webform-client-form-35" value="webform_client_form_35"  />
-<div id="edit-actions" class="form-actions form-wrapper"><div class="captcha"><input type="hidden" name="captcha_sid" id="edit-captcha-sid" value="6226"  />
-<input type="hidden" name="captcha_token" id="edit-captcha-token" value="89291b99bb27e9b5f51253d06b8f1719"  />
-<img src="http://paris-cote-d-azur-rental.com/image_captcha/6226/1733758951" alt="Image CAPTCHA" title="Image CAPTCHA" /><div class="form-item" id="edit-captcha-response-wrapper">
- <label for="edit-captcha-response">What code is in the image?: <span class="form-required" title="This field is required.">*</span></label>
- <input type="text" maxlength="128" name="captcha_response" id="edit-captcha-response" size="15" value="" class="form-text required" />
- <div class="description">Enter the characters shown in the image.</div>
-</div>
-</div><span class="art-button-wrapper"><span class="l"></span><span class="r"></span><input type="submit" name="op" id="edit-submit" value="Submit"  class="form-submit art-button" /></span></div>
-</div></form>
+</form>
 </div>
 </div>
 <div class="cleared"></div>
@@ -348,7 +358,7 @@ var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-17445088-1"]);_gaq.push(["_t
     <td>
 <div class="art-Footer-inner">
         <a href="rss.xml" class="art-rss-tag-icon"></a>        <div class="art-Footer-text">
-        © 2013 French Lifestyle Residences. All Rights Reserved.                </div>
+        2013 French Lifestyle Residences. All Rights Reserved.                </div>
     </div>
 
 
